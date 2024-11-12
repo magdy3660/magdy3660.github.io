@@ -149,7 +149,7 @@ photozoom:
 widget_tree:
   cdn: false
   hide: false
-  layout: default
+  layout: home
   # layout:
   #   - home
   #   - page
