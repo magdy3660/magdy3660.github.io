@@ -1,5 +1,5 @@
 ---
-title: Machine Writeup:HTB - SolarLab 
+title: HackTheBox SolarLab  Walkthrough 
 date: 2024-09-22 19:27:02
 tags:
 - Writeup
@@ -16,16 +16,8 @@ tags:
 ---
 ![alt text](../images/solarlab/blacksolar.png)
 
----------------------------
-| INFO|  |
-|----|----|
-|CTF NAME|**SolarLab**|
-|Operating System| **Windows**|
-|Diffculty|   **Medium**  |
-|Retire date| 21 Sep 2024
-|Points |**35**|
-----------------------------------
-# Description
+---------
+# Introduction
 SolarLab begins with an SMB share containing a spreadsheet of usernames and passwords. By exploiting a website that displays distinct error messages for incorrect usernames versus wrong passwords, combined with analyzing the username format, I was able to identify valid credentials.
 
  Once logged in, I leveraged CVE-2023-33733 in the reportlab PDF generation process to achieve Remote Code Execution (RCE) and obtain a shell.
@@ -33,6 +25,17 @@ SolarLab begins with an SMB share containing a spreadsheet of usernames and pass
 For lateral movement,  to escalate privileges to the openfire user,  method takes advantage of CVE-2023-32315 in OpenFire to create a user and upload a malicious plugin for RCE.
  With this access, I decrypted a password from the OpenFire configuration, which  served as the administrator's password. 
 
+ <!-- more -->
+----------------------------------
+
+
+| INFO|  |
+|----|----|
+|CTF NAME|**SolarLab**|
+|Operating System| **Windows**|
+|Diffculty|   **Medium**  |
+|Retire date| 21 Sep 2024
+|Points |**35**|
 -------------------------------
 # INFORMATION GATHERING
 

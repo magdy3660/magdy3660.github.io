@@ -1,4 +1,5 @@
-﻿.container-narrow {
+﻿
+.container-narrow {
     margin: 0 auto;
     max-width: 970px
 }
@@ -185,21 +186,21 @@ em.search-keyword {
 }
 
 a {
-    color: #2bbc8a
+    color: #d60d0d;
 }
 
 a:focus {
-    color: #fefe54;
+    color: #500c0c79;
     background: #a50
 }
 
 a:hover {
-    color: #000000;
-    background: rgb(153, 153, 153)
+    color: #ca1f1f;
+    background: rgba(138, 5, 5, 0.301)
 }
 
 a:active {
-    color: #fefe54;
+    color: #fe5a54;
     background: #a50
 }
 
@@ -734,8 +735,12 @@ border: 2px solid rgb(255, 255, 255) !important;
 
 .gt-container .gt-btn {
 
-    background-color: #2bbc8a!important;
-    color: #000 !important;
+
+/* To something like */
+color: #8B0000; /* Dark Red */
+background-color: #8B0000!important; /* Dark Red */
+color: #8B0000!important; /* Dark Red */
+color: #8B0000 !important; /* Dark Red */
     border: 1px solid #000000 !important;
     font-size: 0.8em !important;
 }
@@ -760,4 +765,15 @@ border: 2px solid rgb(255, 255, 255) !important;
     width: 100%;
     height: 100%;
     fill: #ffffff !important;
+}
+
+CopyInsert
+/* Custom styles to override Bootstrap font-family */
+body {
+    font-family: 'Arial', sans-serif; /* Change to a more readable font */
+}
+
+/* Optional: Override specific components if needed */
+ p {
+    font-family: 'Arial', sans-serif; /* Ensure headings and paragraphs use the same font */
 }

@@ -18,7 +18,7 @@ pre,
 }
 
 code {
-    background: #eee;
+    background: #1f0303;
     border: 0px solid #d6d6d6;
     padding: 0 5px;
     margin: 2 2px;
@@ -116,7 +116,7 @@ pre code {
 .highlight figcaption {
     zoom: 1;
     font-size: .85em;
-    color: #999;
+    color: hsla(0, 93%, 16%, 0.562);
     line-height: 1em;
     margin-bottom: 1em
 }

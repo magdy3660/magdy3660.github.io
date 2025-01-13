@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://abdomagdy0.github.io/
+url: https://magdy3660.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -149,10 +149,9 @@ photozoom:
 widget_tree:
   cdn: false
   hide: false
-  layout: home
-  # layout:
-  #   - home
-  #   - page
+  layout:
+     - home
+     - page
   showCount: true
   toc:
     enable: false
